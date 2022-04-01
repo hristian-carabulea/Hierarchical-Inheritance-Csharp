@@ -4,4 +4,4 @@
 ## ==========  =======  =======
 ## Employee    Manager  Salesperson
 ##
-## Using constructors
+## Using constructors, and how to call parent class constructors from child class constructors
