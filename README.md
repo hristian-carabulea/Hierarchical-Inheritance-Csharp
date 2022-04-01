@@ -1,3 +1,3 @@
 # # Hierarchical-Inheritance-Csharp
 ## One parent, two children
-## Employee, Manager and Salesperson
+## Employee: Manager and Salesperson
