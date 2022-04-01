@@ -5,6 +5,12 @@
     //private string _location;
     protected string _location;
 
+    public Employee (int emplID, string emplName, string location)
+    {
+        _emplID = emplID;
+        _emplName = emplName;
+        _location = location;
+    }
     //properties of Employee class
     public int EmplID
     {

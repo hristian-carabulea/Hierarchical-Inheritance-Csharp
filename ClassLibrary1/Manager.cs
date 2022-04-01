@@ -2,10 +2,16 @@
 {
     private string _departmentName;
 
+    //child class constructor
+    public Manager(int emplID, string emplName, string location, string departmentName):base(emplID, emplName, location)
+    {
+        _departmentName = departmentName;
+    }
+
     //properties
     public string DepartmentName
     {
-        set { _departmentName = value; }
+        set { _departmentName = value; } 
         get { return _departmentName; }
     }
 

@@ -1,25 +1,26 @@
 ﻿/// <summary>
 /// Hierarchial inheritance: one parent, two children (in this case).
+/// Changed from initializing values through properties to using constructors to do it
 /// </summary>
 class Program
 {
     static void Main()
     {
         // create objects
-        Employee empl1 = new Employee();
-        empl1.EmplID = 101;
-        empl1.EmplName = "Joe Blow";
-        empl1.Location = "Detroit";
+        Employee empl1 = new Employee(101, "Joe Blow", "Detroit"); //using the constructor to initialize values
+        //empl1.EmplID = 101;
+        //empl1.EmplName = "Joe Blow";
+        //empl1.Location = "Detroit";
         System.Console.WriteLine("\nObject of Parent Class Employee: ");
         System.Console.WriteLine("Employee ID: " + empl1.EmplID);
         System.Console.WriteLine("Employee Name: " + empl1.EmplName);
         System.Console.WriteLine("Employee Location: " + empl1.Location);
 
-        Salesperson salesm1 = new Salesperson();
-        salesm1.EmplID = 102;
-        salesm1.EmplName = "McKinny McKoona";
-        salesm1.Location = "Troy";
-        salesm1.Region = "East";
+        Salesperson salesm1 = new Salesperson(102, "McKinny McKoona", "Troy", "East"); //using the constructor to initialize values
+        //salesm1.EmplID = 102;
+        //salesm1.EmplName = "McKinny McKoona";
+        //salesm1.Location = "Troy";
+        //salesm1.Region = "East";
         System.Console.WriteLine("\nObject of Child Class Salesperson: ");
         System.Console.WriteLine("Salesperson ID: " + salesm1.EmplID);
         System.Console.WriteLine("Salesperson Name: " + salesm1.EmplName);
@@ -27,11 +28,11 @@ class Program
         System.Console.WriteLine("Salesperson Region: " + salesm1.Region);
         System.Console.WriteLine("Sales for the current month: " + salesm1.GetSalesForTheCurrentMonth());
 
-        Manager mgr1 = new Manager();
-        mgr1.EmplID = 103;
-        mgr1.EmplName = "Elvis Costello";
-        mgr1.Location = "Dearborn";
-        mgr1.DepartmentName = "Accounting";
+        Manager mgr1 = new Manager(103, "Elvis Costello", "Dearborn", "Accounting"); //using the constructor to initialize values
+        //mgr1.EmplID = 103;
+        //mgr1.EmplName = "Elvis Costello";
+        //mgr1.Location = "Dearborn";
+        //mgr1.DepartmentName = "Accounting";
         System.Console.WriteLine("\nObject of Child Class Manager: ");
         System.Console.WriteLine("Manager ID: " + mgr1.EmplID);
         System.Console.WriteLine("Manager Name: " + mgr1.EmplName);

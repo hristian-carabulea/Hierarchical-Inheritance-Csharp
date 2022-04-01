@@ -1,3 +1,7 @@
 # # Hierarchical-Inheritance-Csharp
-## One parent, two children
-## Employee: Manager and Salesperson
+##
+## One parent  child 1  child 2
+## ==========  =======  =======
+## Employee    Manager  Salesperson
+##
+## Using constructors
